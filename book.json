@@ -13,9 +13,6 @@
     "sitemap"
   ],
   "pluginsConfig": {
-    "disqus": {
-      "shortName": "webpack-handbook"
-    },
     "github": {
       "url": "https://github.com/zhaoda/webpack-handbook"
     },
