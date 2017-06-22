@@ -1,11 +1,8 @@
 {
-  
   "plugins": [
     "github",
     "prism",
     "-highlight",
     "splitter",
-  ],
-
-  
+  ],  
 }
