@@ -8,9 +8,5 @@
     "-highlight",
     "splitter",
   ],
-  "pluginsConfig": {
-    "github": {
-      "url": "https://github.com/dengfuping"
-    },
-  }
+  
 }
