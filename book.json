@@ -1,7 +1,5 @@
 {
   
-  "description": "记录自己的LeetCode刷题之旅",
-  "language": "zh",
   "plugins": [
     "github",
     "prism",
