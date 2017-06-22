@@ -4,8 +4,6 @@
   "language": "zh",
   "plugins": [
     "github",
-    "prism",
-    "-highlight",
     "splitter"
   ],
   "pluginsConfig": {
