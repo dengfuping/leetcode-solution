@@ -14,7 +14,7 @@
 
 ### C++
 
-```
+```cpp
 class Solution {
 public:
     int maxDistance(vector<vector<int>>& arrays) {
@@ -22,15 +22,15 @@ public:
         int m = arrays.size();
         for (int i = 0; i < m - 1; i++){
             int n = arrays[i].size();
-            
+
             for(int j = i + 1; j < m; j++){
                 int p = arrays[j].size();
-                
+
                 ret = max(ret, abs(arrays[i][0] - arrays[j][p-1]));
                 ret = max(ret, abs(arrays[i][n-1] - arrays[j][0]));
             }
         }
-        
+
         return ret;
     }
 };
