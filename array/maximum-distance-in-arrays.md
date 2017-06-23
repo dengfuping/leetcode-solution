@@ -8,7 +8,7 @@
 
 ## 解析
 
-一趟遍历，时间复杂度为O\(n\)。将本组的最小值与其他组的最大值依次做差，再将本组的最大值与其他组的最小依次做差，取绝对值比较后取较大者即可。
+一趟遍历，将本组的最小值与其他组的最大值依次做差，再将本组的最大值与其他组的最小依次做差，取绝对值比较后取较大者即可。
 
 ## 代码
 
@@ -77,11 +77,13 @@ class Solution:
             ret = max(ret, abs(maxValue - arrays[i][0]));
             minValue = min(minValue, arrays[i][0]);
             maxValue = max(maxValue, arrays[i][n-1]);
-        
+
         return ret;
 ```
 
+## 复杂度分析
 
+很明显，只对数组进行了一次遍历，时间复杂度为O\(n\)。
 
 
 
