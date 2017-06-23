@@ -29,7 +29,7 @@ public:
             minValue = min(minValue, arrays[i][0]);
             maxValue = max(maxValue, arrays[i][n-1]);
         }
-        
+
         return ret;
     }
 };
@@ -44,7 +44,7 @@ public class Solution {
         int m = arrays.size();
         int minValue = arrays.get(0).get(0);
         int maxValue = arrays.get(0).get(arrays.get(0).size() - 1);
-        
+
         for (int i = 1; i < m; i++) {
             int n = arrays.get(i).size();
             ret = Math.max(ret, Math.abs(minValue - arrays.get(i).get(n-1)));
@@ -52,13 +52,36 @@ public class Solution {
             minValue = Math.min(minValue, arrays.get(i).get(0));
             maxValue = Math.max(maxValue, arrays.get(i).get(n - 1));
         }
-        
+
         return ret;
     }
 }
 ```
 
 ### Python
+
+```py
+class Solution:
+    def maxDistance(self, arrays):
+        """
+        :type arrays: List[List[int]]
+        :rtype: int
+        """
+        ret = 0;
+        m = len(arrays);
+        minValue = arrays[0][0];
+        maxValue = arrays[0][len(arrays[0])-1];
+        for i in range(1, m):
+            n = len(arrays[i]);
+            ret = max(ret, abs(minValue - arrays[i][n-1]));
+            ret = max(ret, abs(maxValue - arrays[i][0]));
+            minValue = min(minValue, arrays[i][0]);
+            maxValue = max(maxValue, arrays[i][n-1]);
+        
+        return ret;
+```
+
+
 
 
 
