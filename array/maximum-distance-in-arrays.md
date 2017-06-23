@@ -8,7 +8,7 @@
 
 ## 解析
 
-遍历各个数组，将本组的最小值与其他组的最大值依次做差，再将本组的最大值与其他组的最小依次做差，逐一比较他们的绝对值以后取较大者即可。
+一趟遍历，时间复杂度为O\(n\)。将本组的最小值与其他组的最大值依次做差，再将本组的最大值与其他组的最小依次做差，取绝对值比较后取较大者即可。
 
 ## 代码
 
@@ -20,17 +20,16 @@ public:
     int maxDistance(vector<vector<int>>& arrays) {
         int ret = 0;
         int m = arrays.size();
-        for (int i = 0; i < m - 1; i++){
+        int minValue = arrays[0][0];
+        int maxValue = arrays[0][arrays[0].size() - 1];
+        for (int i = 1; i < m; i++){
             int n = arrays[i].size();
-
-            for(int j = i + 1; j < m; j++){
-                int p = arrays[j].size();
-
-                ret = max(ret, abs(arrays[i][0] - arrays[j][p-1]));
-                ret = max(ret, abs(arrays[i][n-1] - arrays[j][0]));
-            }
+            ret = max(ret, abs(minValue - arrays[i][n-1]));
+            ret = max(ret, abs(maxValue - arrays[i][0]));
+            minValue = min(minValue, arrays[i][0]);
+            maxValue = max(maxValue, arrays[i][n-1]);
         }
-
+        
         return ret;
     }
 };
@@ -43,15 +42,15 @@ public class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int ret = 0;
         int m = arrays.size();
-        for (int i = 0; i < m - 1; i++){
+        int minValue = arrays.get(0).get(0);
+        int maxValue = arrays.get(0).get(arrays.get(0).size() - 1);
+        
+        for (int i = 1; i < m; i++) {
             int n = arrays.get(i).size();
-            
-            for (int j = i + 1; j < m; j++){
-                int p = arrays.get(j).size();
-                
-                ret = Math.max(ret, Math.abs(arrays.get(i).get(0) - arrays.get(j).get(p-1)));
-                ret = Math.max(ret, Math.abs(arrays.get(i).get(n-1) - arrays.get(j).get(0)));
-            }
+            ret = Math.max(ret, Math.abs(minValue - arrays.get(i).get(n-1)));
+            ret = Math.max(ret, Math.abs(maxValue - arrays.get(i).get(0)));
+            minValue = Math.min(minValue, arrays.get(i).get(0));
+            maxValue = Math.max(maxValue, arrays.get(i).get(n - 1));
         }
         
         return ret;
