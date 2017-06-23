@@ -38,6 +38,27 @@ public:
 
 ### Java
 
+```java
+public class Solution {
+    public int maxDistance(List<List<Integer>> arrays) {
+        int ret = 0;
+        int m = arrays.size();
+        for (int i = 0; i < m - 1; i++){
+            int n = arrays.get(i).size();
+            
+            for (int j = i + 1; j < m; j++){
+                int p = arrays.get(j).size();
+                
+                ret = Math.max(ret, Math.abs(arrays.get(i).get(0) - arrays.get(j).get(p-1)));
+                ret = Math.max(ret, Math.abs(arrays.get(i).get(n-1) - arrays.get(j).get(0)));
+            }
+        }
+        
+        return ret;
+    }
+}
+```
+
 ### Python
 
 
