@@ -6,27 +6,19 @@
 
 原题链接：[https://leetcode.com/problems/median-of-two-sorted-arrays/\#/description](https://leetcode.com/problems/median-of-two-sorted-arrays/#/description)
 
-# 题意
+## 题意
 
+## 解析
 
+## 代码
 
-# 解析
+### C++
 
+### Java
 
+### Python
 
-# 代码
-
-## C++
-
-
-
-## Java
-
-
-
-## Python
-
-# 复杂度分析
+## 复杂度分析
 
 
 
