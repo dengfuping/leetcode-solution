@@ -10,5 +10,5 @@
   * [Longest Substring Without Repeating Characters](string/longest-substring-without-repeating-characters.md)
 * [Depth-first Search](depth-first-search.md)
   * [Same Tree](depth-first-search/same-tree.md)
-  * Symmetric Tree
+  * [Symmetric Tree](depth-first-search/symmetric-tree.md)
 
