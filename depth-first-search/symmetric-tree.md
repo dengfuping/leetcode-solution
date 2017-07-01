@@ -30,6 +30,8 @@
 
 ## 解析
 
+与判断两个二叉树是否相同的思路类似，只不过是left对right、right对left，调换一下即可。
+
 ## 代码
 
 ### C++
@@ -99,7 +101,7 @@ public class Solution {
         }
         return isSymmetricTree(p.left, q.right) && isSymmetricTree(p.right, q.left);
     }
-    
+
     public boolean isSymmetric(TreeNode root) {
         if (root == null){
             return true;
