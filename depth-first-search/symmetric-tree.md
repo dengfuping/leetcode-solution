@@ -11,7 +11,7 @@
 >  / \ / \
 > 3  4 4  3
 > ```
-
+>
 > But the following`[1,2,2,null,3,null,3]`is not:
 >
 > ```
@@ -22,7 +22,7 @@
 >    3    3
 > ```
 
-原题链接：[https://leetcode.com/problems/symmetric-tree/\#/description](https://leetcode.com/problems/symmetric-tree/#/description)
+原题链接：[https://leetcode.com/problems/symmetric-tree/\#/description](https://leetcode.com/problems/symmetric-tree/#/description)
 
 ## 题意
 
