@@ -26,15 +26,62 @@
 
 ## 题意
 
+判断一棵树是否是对称树（轴对称）。
+
 ## 解析
 
 ## 代码
 
 ### C++
 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    bool isSymmetricTree(TreeNode* p, TreeNode* q){
+        if (p == nullptr && q == nullptr){
+            return true;
+        }
+        else if (p == nullptr && q != nullptr){
+            return false;
+        }
+        else if (p != nullptr && q == nullptr){
+            return false;
+        }
+        else if (p->val != q->val){
+            return false;
+        }
+        return isSymmetricTree(p->left, q->right) && isSymmetricTree(p->right, q->left);
+    }
+    
+    bool isSymmetric(TreeNode* root) {
+        if (root == nullptr){
+            return true;
+        }
+        return isSymmetricTree(root->left, root->right);
+    }
+};
+```
+
 ### Java
 
+```java
+
+```
+
 ### Python
+
+```py
+
+```
 
 
 
