@@ -11,4 +11,6 @@
 * [Depth-first Search](depth-first-search.md)
   * [Same Tree](depth-first-search/same-tree.md)
   * [Symmetric Tree](depth-first-search/symmetric-tree.md)
+* [Dynamic Programming](dynamic-programming.md)
+  * [Climbing Stairs](dynamic-programming/climbing-stairs.md)
 
