@@ -12,7 +12,8 @@
 >
 > **Note:**mandnwill be at most 100.
 
-原题链接：[https://leetcode.com/problems/unique-paths/\#/description](https://leetcode.com/problems/unique-paths/#/description)
+原题链接：  
+[https://leetcode.com/problems/unique-paths/\#/description](https://leetcode.com/problems/unique-paths/#/description)
 
 ## 题意
 
@@ -22,9 +23,21 @@
 
 ### C++
 
+```cpp
+
+```
+
 ### Java
 
+```java
+
+```
+
 ### Python
+
+```py
+
+```
 
 
 
