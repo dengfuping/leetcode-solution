@@ -59,7 +59,7 @@ public class Solution {
             f2 = f3;
         }
         return f3;
-        
+
     }
 }
 ```
@@ -84,7 +84,7 @@ class Solution(object):
             f3 = f1 + f2;
             f1 = f2;
             f2 = f3;
-        
+
         return f3;
 ```
 

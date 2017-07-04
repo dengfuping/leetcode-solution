@@ -13,4 +13,5 @@
   * [Symmetric Tree](depth-first-search/symmetric-tree.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [Climbing Stairs](dynamic-programming/climbing-stairs.md)
+  * [Unique Paths](dynamic-programming/unique-paths.md)
 
