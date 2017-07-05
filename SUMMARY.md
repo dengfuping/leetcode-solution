@@ -19,4 +19,5 @@
 * [Two Pointers](two-pointers.md)
   * [Longest Substring Without Repeating Characters](two-pointers/longest-substring-without-repeating-characters.md)
   * [Reverse String](two-pointers/reverse-string.md)
+  * [3Sum](two-pointers/3sum.md)
 
