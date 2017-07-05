@@ -33,9 +33,5 @@ public:
 };
 ```
 
-### Java
-
-### Python
-
 
 
