@@ -6,6 +6,7 @@
   * [Median of Two Sorted Arrays](array/median-of-two-sorted-arrays.md)
   * [Container With Most Water](array/container-with-most-water.md)
   * [Maximum Subarray](array/maximum-subarray.md)
+  * [Remove Duplicates from Sorted Array](array/remove-duplicates-from-sorted-array.md)
 * [String](string.md)
   * [Longest Substring Without Repeating Characters](string/longest-substring-without-repeating-characters.md)
 * [Depth-first Search](depth-first-search.md)
