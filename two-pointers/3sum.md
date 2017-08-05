@@ -1,6 +1,6 @@
 # 3Sum
 
-> Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+> Given an array `S` of `n` integers, are there elements `a`, `b`, `c` in S such that `a + b + c = 0`? Find all unique triplets in the array which gives the sum of zero.
 >
 > **Note:**The solution set must not contain duplicate triplets.
 >
@@ -14,7 +14,8 @@
 > ]
 > ```
 
-原题链接：[https://leetcode.com/problems/3sum/\#/description](https://leetcode.com/problems/3sum/#/description)
+原题链接：  
+[https://leetcode.com/problems/3sum/\#/description](https://leetcode.com/problems/3sum/#/description)
 
 ## 题意
 
