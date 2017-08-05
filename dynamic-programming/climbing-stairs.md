@@ -4,7 +4,7 @@
 >
 > Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 >
-> **Note:**Givennwill be a positive integer.
+> **Note: **Givennwill be a positive integer.
 
 原题链接：[https://leetcode.com/problems/climbing-stairs/\#/description](https://leetcode.com/problems/climbing-stairs/#/description)
 
