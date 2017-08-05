@@ -28,7 +28,7 @@
 
 ## 解析
 
-解题思路和 Unique Path 也是一样，只需要将障碍物所在位置对应的数组元素置为0即可。不过需要注意的是，对于第一行或第一列的元素，如果存在障碍物，则需要将其后的所有元素所在位置对应的数组元素都置为0，至于理由，你懂的^-^。
+解题思路和 Unique Path 也是一样，只需要将障碍物所在位置对应的数组元素置为 `0` 即可。不过需要注意的是，对于第一行或第一列的元素，如果存在障碍物，则需要将其后的所有元素所在位置对应的数组元素都置为 `0`，至于理由，你懂的^-^。
 
 ## 代码
 
@@ -144,7 +144,7 @@ class Solution(object):
                 break;
             else:
                 arr[i][0] = 1;
-        
+
         for i in range(0, n):
             if obstacleGrid[0][i] == 1:
                 for j in range(i, n):
@@ -152,14 +152,14 @@ class Solution(object):
                 break;
             else:
                 arr[0][i] = 1;
-        
+
         for i in range(1, m):
             for j in range(1, n):
                 if obstacleGrid[i][j] == 1:
                     arr[i][j] = 0;
                 else:
                     arr[i][j] = arr[i][j-1] + arr[i-1][j];
-                    
+
         return arr[m-1][n-1];
 ```
 
