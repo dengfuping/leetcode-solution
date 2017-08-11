@@ -8,7 +8,7 @@
 >
 > For example,
 >
-> There is one obstacle in the middle of a `3 x 3` grid as illustrated below.
+> There is one obstacle in the middle of a `3x3` grid as illustrated below.
 >
 > ```
 > [
