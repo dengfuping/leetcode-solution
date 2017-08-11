@@ -10,7 +10,7 @@
 >
 > Above is a `3 x 7` grid. How many possible unique paths are there?
 >
-> **Note:**m and n will be at most 100.
+> **Note: **m and n will be at most 100.
 
 原题链接：  
 [https://leetcode.com/problems/unique-paths/\#/description](https://leetcode.com/problems/unique-paths/#/description)
